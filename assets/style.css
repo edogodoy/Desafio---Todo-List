@@ -1,0 +1,152 @@
+/********************************************* GENERALES */
+
+:root {
+    --color-primario: #2B0D65;
+    --color-secundario: #4A0F6F;
+    --color-terciario: #650D1F;
+    --color-claro: #ecf0f1;
+    --color-oscuro: #34495e;
+    --color-agregar: #43b943;
+    --color-eliminar: #e74c3c;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    height: 100vh;
+    min-height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.espacio {
+    flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header {
+    color: var(--color-claro);
+    padding: 4rem 0 6rem;
+    margin-bottom: 3rem;
+
+    h1 {
+        font-size: 6rem;
+    }
+}
+.footer {
+    color: var(--color-claro);
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+.secciones {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contenedor {
+    width: 70%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-claro);
+    text-align: left;
+    border-radius: .6rem;
+    box-shadow: .6rem 1.6rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.btn:hover {
+    background-color: var(--color-secundario);
+}
+.btn-agregar {
+    background-color: var(--color-agregar);
+}
+.btn-eliminar {
+    background-color: var(--color-eliminar);
+}
+.nueva-tarea {
+    text-align: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    input {
+        padding: 1rem;
+    }
+    input, button {
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+.contador-tarea {
+    margin-top: 2rem;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    text-align: left;
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    box-shadow: inset .6rem 1.6rem 2rem rgba(0, 0, 0, 0.4);
+    span {
+        font-size: 2.6rem;
+    }
+}
+
+
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    .checkbox {
+        transform: scale(1.5);
+        
+    }
+    
+}
+.left-group {
+    display: flex;
+    gap: 2rem;
+}
